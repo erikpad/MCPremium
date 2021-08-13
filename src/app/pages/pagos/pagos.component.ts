@@ -7,7 +7,7 @@ import { StripeService } from './stripe.service';
   styleUrls: ['./pagos.component.css']
 })
 
-export class PagosComponent implements ElementRef {
+export class PagosComponent implements AfterViewInit {
   
   @ViewChild('cardInfo') cardInfo: ElementRef;
   cardError: string;

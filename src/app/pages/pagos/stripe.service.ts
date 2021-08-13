@@ -11,7 +11,7 @@ export class StripeService {
 
         }
         charge(cantidad, tokenId){
-            return this.http.post("http://localhost:3000/ProyectostripeBack",{
+            return this.http.post("http://localhost:3000/ProyectoStripeBack",{
                 stripeToken: tokenId,
                 cantidad:cantidad
             }).toPromise();
