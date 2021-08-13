@@ -8,10 +8,19 @@
 
     <script src="https://js.stripe.com/v3/"></script>
     <script>
-        const stripe = Stripe('pk_test_51JNiMqLzBwNbZRjzmHUX7pNVYf1Sl3BGhHwCbWkoaLJN20hsexDgG8ngzvC2P0UMrtZmHBsPJh0OIU1LjbZAUk6x00F3A5lsj1')
+    var stripe = Stripe('pk_test_51JNiMqLzBwNbZRjzmHUX7pNVYf1Sl3BGhHwCbWkoaLJN20hsexDgG8ngzvC2P0UMrtZmHBsPJh0OIU1LjbZAUk6x00F3A5lsj1');        const elements = stripe.elements();
+    var elements = stripe.elements();
     </script>
 </head>
 <body>
-    
+    <div class="credit-card " >
+        <div>
+            <div #cardInfo></div>
+            <div class="error" *ngIf="cardError">
+                {{ cardError }}
+            </div>
+        </div>
+        <button>Pagar</button>
+    </div>
 </body>
 </html>
