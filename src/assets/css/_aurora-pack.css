@@ -58,6 +58,7 @@ html {
 .ae-container-fluid {
   margin-right: auto;
   margin-left: auto;
+  padding-top: 10vh;
 }
 @media (min-width: 40em) {
   .ae-container-fluid {

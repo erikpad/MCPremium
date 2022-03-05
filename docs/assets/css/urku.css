@@ -39,6 +39,10 @@ body {
   }
 }
 
+.rk-borders{
+  border-radius:3px; box-shadow:0 0 1px 0 rgba(0, 0, 0, 0.5),
+  0 1px 10px 0 rgba(0, 10, 0, 0.664);
+}
 .rk-main {
   z-index: 1;
   position: static;
@@ -74,11 +78,11 @@ body {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content:space-between;
   -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content:space-between;
   padding-bottom: 3.3rem;
-  padding-top: 2.8rem;
+  padding-top: 2.6rem;
 }
 @media (min-width: 64em) {
   .rk-topbar {
@@ -96,8 +100,15 @@ body {
   letter-spacing: 2.25px;
   text-align: center;
   text-transform: uppercase;
-  width: 20%;
+  
 }
+.logo{
+  max-width: 100%;
+ max-height: 100%;
+ height: 10px;
+ width: 100px;
+}
+
 .rk-logo sup {
   font-size: .5625rem;
   position: relative;
@@ -163,7 +174,7 @@ body {
   width: 100px;
 }
 .rk-search input:focus + label {
-  color: #a0a0a0;
+  color: #08f29b;
 }
 
 .rk-navmobile {
@@ -209,7 +220,7 @@ body {
 }
 .rk-mobile-menu:checked + label,
 .rk-mobile-menu + label:hover {
-  color: #a0a0a0;
+  color: #08f29b;
 }
 .rk-mobile-menu:checked + label svg:nth-of-type(1) {
   -webkit-transform: rotate(45deg);
@@ -234,7 +245,7 @@ body {
 }
 
 .rk-footer__text {
-  color: #787878;
+  color: #027353;
   font-size: .75rem;
   margin-bottom: .875rem;
 }
@@ -499,7 +510,7 @@ body {
   padding-top: 100%;
 }
 .rk-item--flex:hover {
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   background-blend-mode: luminosity;
 }
 @media (min-width: 40em) {
@@ -534,9 +545,9 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(232, 242, 155, 0.4);
   bottom: 0;
-  color: #202020;
+  color: #014029;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1272,7 +1283,7 @@ body {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
           align-items: flex-end;
-  height: 100vh;
+  height: 90vh;
   padding-bottom: 1.5rem;
   width: 100%;
 }
@@ -1351,13 +1362,13 @@ body {
 
 .item-inside-1 {
   /* background-image: url("../img/project-1.jpg"); */
-  background-position: 50% 100%;
-  background-size: 350%;
+  background-position: 50% 50%;
+  background-size:100%;
 }
 
 @media (min-width: 40em) {
   .item-inside-1 {
-    background-size: 150%;
+    background-size: 100%;
   }
 }
 

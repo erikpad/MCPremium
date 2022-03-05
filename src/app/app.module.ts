@@ -15,6 +15,7 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { PagosComponent } from './pages/pagos/pagos.component';
+import { SearchComponent } from './pages/search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { PagosComponent } from './pages/pagos/pagos.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    PagosComponent
+    PagosComponent,
+    SearchComponent
     
   ],
   imports: [
